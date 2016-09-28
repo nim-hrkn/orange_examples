@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="File" position="(107.0, 115.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owfile.OWFile" title="File" version="" />
+		<node id="1" name="Data Table" position="(264.0, 117.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="2" name="Linear Regression" position="(440.0, 208.0)" project_name="Orange3" qualified_name="Orange.widgets.regression.owlinearregression.OWLinearRegression" title="Linear Regression" version="" />
+		<node id="3" name="Predictions" position="(604.0, 116.0)" project_name="Orange3" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" title="Predictions" version="" />
+		<node id="4" name="Scatter Plot" position="(811.0, 116.0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" title="Scatter Plot" version="" />
+		<node id="5" name="Data Table" position="(569.0, 247.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table (1)" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Selected Data" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Predictors" sink_node_id="3" source_channel="Predictor" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="3" source_channel="Selected Data" source_node_id="1" />
+		<link enabled="true" id="4" sink_channel="Data" sink_node_id="4" source_channel="Predictions" source_node_id="3" />
+		<link enabled="true" id="5" sink_channel="Data" sink_node_id="5" source_channel="Coefficients" source_node_id="2" />
+	</links>
+	<annotations>
+		<text font-family="Helvetica" font-size="16" id="0" rect="(31.0, 180.0, 193.0, 80.0)">"sin-sin5-orange.csv"
+Orange用に修正したcsv fileを読み込む。</text>
+		<text font-family="Helvetica" font-size="16" id="1" rect="(210.0, 23.0, 126.0, 69.0)">data tableを開いて全選択する。</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWAsAAABzaGVldF9uYW1lc3EBfXECWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQNDLgHZ
+0MsAAQAAAAAA7wAAAO4AAALyAAACywAAAPgAAAEUAAAC6QAAAsIAAAAAAABxBFgGAAAAc291cmNl
+cQVLAFgLAAAAcmVjZW50X3VybHNxBl1xB1gMAAAAcmVjZW50X3BhdGhzcQhdcQkoY09yYW5nZS53
+aWRnZXRzLnV0aWxzLmZpbGVkaWFsb2dzClJlY2VudFBhdGgKcQopgXELfXEMKFgHAAAAcmVscGF0
+aHENTlgFAAAAdGl0bGVxDlgAAAAAcQ9YBwAAAGFic3BhdGhxEFhHAAAAQzovVXNlcnMva2luby9E
+b2N1bWVudHMvcHl0aG9uX3R1dG9yaWFsX3N0YWdlMS9kYXRhL3Npbi1zaW41LW9yYW5nZS5jc3Zx
+EVgFAAAAc2hlZXRxEmgPWAYAAABwcmVmaXhxE051YmgKKYFxFH1xFShoDU5oDmgPaBBYQAAAAEM6
+L1VzZXJzL2tpbm8vRG9jdW1lbnRzL3B5dGhvbl90dXRvcmlhbF9zdGFnZTEvZGF0YS9zaW4tc2lu
+NS5jc3ZxFmgSaA9oE051YmgKKYFxF31xGChoDU5oDmgPaBBYPAAAAEM6L1VzZXJzL2tpbm8vRG9j
+dW1lbnRzL3B5dGhvbl90dXRvcmlhbF9zdGFnZTEvZGF0YS9zaW41LmNzdnEZaBJoD2gTTnViaAop
+gXEafXEbKGgNWAgAAABpcmlzLnRhYnEcaA5oD2gQWDYAAABDOi9QeXRob24zNC9saWIvc2l0ZS1w
+YWNrYWdlcy9PcmFuZ2UvZGF0YXNldHMvaXJpcy50YWJxHWgSaA9oE1gPAAAAc2FtcGxlLWRhdGFz
+ZXRzcR51YmVYEAAAAGNvbnRleHRfc2V0dGluZ3NxH11xIFgDAAAAdXJscSFoD3Uu
+</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgVAAAAc2hvd19hdHRyaWJ1dGVfbGFiZWxzcQKIWBMA
+AABzYXZlZFdpZGdldEdlb21ldHJ5cQNDLgHZ0MsAAQAAAAABFAAAAOAAAAVvAAADRAAAAR0AAAEG
+AAAFZgAAAzsAAAAAAABxBFgLAAAAc2VsZWN0X3Jvd3NxBYhYDgAAAGRpc3RfY29sb3JfUkdCcQYo
+S9xL3EvcS/90cQdYEAAAAGNvbnRleHRfc2V0dGluZ3NxCF1xCWNPcmFuZ2Uud2lkZ2V0cy5zZXR0
+aW5ncwpDb250ZXh0CnEKKYFxC31xDChYBAAAAHRpbWVxDUdB1foxjKIB81gKAAAAYXR0cmlidXRl
+c3EOfXEPKFgCAAAAeTJxEEsCWAIAAAB4NXERSwJYAgAAAHg0cRJLAlgCAAAAeDNxE0sCWAIAAAB4
+MnEUSwJYAQAAAHlxFUsCWAIAAAB4MXEWSwJ1WAUAAABtZXRhc3EXfXEYWA4AAABvcmRlcmVkX2Rv
+bWFpbnEZXXEaKGgWSwKGcRtoFEsChnEcaBNLAoZxHWgSSwKGcR5oEUsChnEfaBBLAoZxIGgVSwKG
+cSFlWAYAAAB2YWx1ZXNxIn1xIyhYCwAAAGF1dG9fY29tbWl0cSSISv7///+GcSVYDgAAAGRpc3Rf
+Y29sb3JfUkdCcSZoB0r+////hnEnWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cShoBEr+////hnEp
+WAsAAABzZWxlY3Rfcm93c3EqiEr+////hnErWBIAAABzaG93X2Rpc3RyaWJ1dGlvbnNxLIlK/v//
+/4ZxLVgNAAAAc2VsZWN0ZWRfY29sc3EuXXEvKEsASwFLAksDSwRLBUsGZVgVAAAAc2hvd19hdHRy
+aWJ1dGVfbGFiZWxzcTCISv7///+GcTFYDQAAAHNlbGVjdGVkX3Jvd3NxMl1xMyhLAEsBSwJLA0sE
+SwVLBksHSwhLCUsKSwtLDEsNSw5LD0sQSxFLEksTSxRLFUsWSxdLGEsZSxpLG0scSx1LHksfSyBL
+IUsiSyNLJEslSyZLJ0soSylLKksrSyxLLUsuSy9LMEsxSzJLM0s0SzVLNks3SzhLOUs6SztLPEs9
+Sz5LP0tAS0FLQktDS0RLRUtGS0dLSEtJS0pLS0tMS01LTktPS1BLUUtSS1NLVEtVS1ZLV2VYDgAA
+AGNvbG9yX2J5X2NsYXNzcTSISv7///+GcTV1dWJhWA4AAABjb2xvcl9ieV9jbGFzc3E2iFgSAAAA
+c2hvd19kaXN0cmlidXRpb25zcTeJdS4=
+</properties>
+		<properties format="pickle" node_id="2">gAN9cQAoWAwAAABsZWFybmVyX25hbWVxAVgRAAAATGluZWFyIFJlZ3Jlc3Npb25xAlgTAAAAc2F2
+ZWRXaWRnZXRHZW9tZXRyeXEDQy4B2dDLAAEAAAAAARUAAAHCAAACoQAAAyIAAAEYAAAB4gAAAp4A
+AAMfAAAAAAAAcQRYCAAAAHJlZ190eXBlcQVLAlgIAAAAbDFfcmF0aW9xBkc/4AAAAAAAAFgIAAAA
+YXV0b3NlbmRxB4hYCgAAAGF1dG9fYXBwbHlxCIhYBQAAAHJpZGdlcQmJWAsAAABhbHBoYV9pbmRl
+eHEKSxB1Lg==
+</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWBAAAABzaG93X3ByZWRpY3Rpb25zcQGIWAoAAABzaG93X2F0dHJzcQKIWBMAAABzYXZl
+ZFdpZGdldEdlb21ldHJ5cQNDLgHZ0MsAAQAAAAABhgAAACkAAAVVAAABmwAAAY8AAABPAAAFTAAA
+AZIAAAAAAABxBFgSAAAAb3V0cHV0X3ByZWRpY3Rpb25zcQWIWBQAAABvdXRwdXRfcHJvYmFiaWxp
+dGllc3EGiFgMAAAAb3V0cHV0X2F0dHJzcQeIWAkAAABkcmF3X2Rpc3RxCIhYEAAAAGNvbnRleHRf
+c2V0dGluZ3NxCV1xClgSAAAAc2hvd19wcm9iYWJpbGl0aWVzcQuIdS4=
+</properties>
+		<properties format="pickle" node_id="4">gAN9cQAoWAsAAABhdXRvX3NhbXBsZXEBiFgTAAAAYXV0b19zZW5kX3NlbGVjdGlvbnECiFgTAAAA
+c2F2ZWRXaWRnZXRHZW9tZXRyeXEDQy4B2dDLAAEAAAAAAtgAAABrAAAFqQAAA1cAAALhAAAAkQAA
+BaAAAANOAAAAAAAAcQRYEQAAAHRvb2xiYXJfc2VsZWN0aW9ucQVLAFgFAAAAZ3JhcGhxBn1xByhY
+EQAAAGppdHRlcl9jb250aW51b3VzcQiJWAsAAABzaG93X2xlZ2VuZHEJiFgJAAAAc2hvd19ncmlk
+cQqJWA0AAABjbGFzc19kZW5zaXR5cQuJWAsAAABhbHBoYV92YWx1ZXEMS4BYEQAAAHRvb2x0aXBf
+c2hvd3NfYWxscQ2JWAsAAABwb2ludF93aWR0aHEOSwpYCwAAAGppdHRlcl9zaXplcQ9LClgTAAAA
+bGFiZWxfb25seV9zZWxlY3RlZHEQiXVYEAAAAGNvbnRleHRfc2V0dGluZ3NxEV1xEmNPcmFuZ2Uu
+d2lkZ2V0cy5zZXR0aW5ncwpDb250ZXh0CnETKYFxFH1xFShYBAAAAHRpbWVxFkdB1foxjKZsf1gK
+AAAAYXR0cmlidXRlc3EXfXEYKFgCAAAAeTJxGUsCWAIAAAB4NXEaSwJYAgAAAHg0cRtLAlgCAAAA
+eDNxHEsCWAIAAAB4MnEdSwJYAQAAAHlxHksCWAIAAAB4MXEfSwJ1WAUAAABtZXRhc3EgfXEhWA4A
+AABvcmRlcmVkX2RvbWFpbnEiXXEjKGgfSwKGcSRoHUsChnElaBxLAoZxJmgbSwKGcSdoGksChnEo
+aBlLAoZxKWgeSwKGcSplWAYAAAB2YWx1ZXNxK31xLChYBgAAAGF0dHJfeXEtWBEAAABMaW5lYXIg
+UmVncmVzc2lvbnEuSv7///+GcS9YEwAAAGF1dG9fc2VuZF9zZWxlY3Rpb25xMIhK/v///4ZxMVgT
+AAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEyaARK/v///4ZxM1gRAAAAdG9vbGJhcl9zZWxlY3Rpb25x
+NEsASv7///+GcTVYBQAAAGdyYXBocTZ9cTcoWBEAAABqaXR0ZXJfY29udGludW91c3E4iUr+////
+hnE5WAsAAABzaG93X2xlZ2VuZHE6iEr+////hnE7WAsAAABqaXR0ZXJfc2l6ZXE8SwpK/v///4Zx
+PVgLAAAAYWxwaGFfdmFsdWVxPkuASv7///+GcT9YCgAAAGF0dHJfY29sb3JxQGgeSwKGcUFYCwAA
+AHBvaW50X3dpZHRocUJLCkr+////hnFDWAkAAABzaG93X2dyaWRxRIlK/v///4ZxRVgJAAAAYXR0
+cl9zaXplcUZYAAAAAHFHSv7///+GcUhYCgAAAGF0dHJfbGFiZWxxSWhHSv7///+GcUpYDQAAAGNs
+YXNzX2RlbnNpdHlxS4lK/v///4ZxTFgKAAAAYXR0cl9zaGFwZXFNaEdK/v///4ZxTlgTAAAAbGFi
+ZWxfb25seV9zZWxlY3RlZHFPiUr+////hnFQWBEAAAB0b29sdGlwX3Nob3dzX2FsbHFRiUr+////
+hnFSdVgLAAAAYXV0b19zYW1wbGVxU4hK/v///4ZxVFgGAAAAYXR0cl94cVVYAgAAAHgxcVZLAoZx
+V3V1YmF1Lg==
+</properties>
+		<properties format="pickle" node_id="5">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgOAAAAZGlzdF9jb2xvcl9SR0JxAihL3EvcS9xL/3Rx
+A1gTAAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEEQy4B2dDLAAEAAAAAARQAAADgAAAFbwAAA0QAAAEd
+AAABBgAABWYAAAM7AAAAAAAAcQVYCwAAAHNlbGVjdF9yb3dzcQaIWBIAAABzaG93X2Rpc3RyaWJ1
+dGlvbnNxB4lYEAAAAGNvbnRleHRfc2V0dGluZ3NxCF1xCWNPcmFuZ2Uud2lkZ2V0cy5zZXR0aW5n
+cwpDb250ZXh0CnEKKYFxC31xDChYBAAAAHRpbWVxDUdB1foxjcyg8VgKAAAAYXR0cmlidXRlc3EO
+fXEPWAQAAABjb2VmcRBLAnNYBQAAAG1ldGFzcRF9cRJYBgAAAHZhbHVlc3ETfXEUKGgBiEr+////
+hnEVaAJoA0r+////hnEWaARoBUr+////hnEXaAaISv7///+GcRhoB4lK/v///4ZxGVgNAAAAc2Vs
+ZWN0ZWRfY29sc3EaXXEbWBUAAABzaG93X2F0dHJpYnV0ZV9sYWJlbHNxHIhK/v///4ZxHVgNAAAA
+c2VsZWN0ZWRfcm93c3EeXXEfWA4AAABjb2xvcl9ieV9jbGFzc3EgiEr+////hnEhdVgOAAAAb3Jk
+ZXJlZF9kb21haW5xIl1xI2gQSwKGcSRhdWJhaByIaCCIdS4=
+</properties>
+	</node_properties>
+</scheme>
